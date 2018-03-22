@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void arrange(int &n, int a[]) {
+void arrange(int n, int a[]) {
 	for(int i = 0; i < n; i++) {
 		for(int j = i; j > 0; j--) {
 			if (a[j] < a[j - 1]) {
@@ -21,7 +21,7 @@ void input(int &n, int a[]) {
 	}
 }
 
-void output(int &n, int a[]){
+void output(int n, int a[]){
 	for(int i = 0; i < n; i++) {
 		cout<< a[i] << " ";
 	}
